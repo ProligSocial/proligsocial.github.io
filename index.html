@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prolig | Amatör Lig Takip Sistemi</title>
+  <meta name="theme-color" content="#E41E26" />
+  <style>
+    body {
+      margin: 0;
+      background: #f9f9f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 40px 28px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: center;
+      max-width: 420px;
+      width: 90%;
+    }
+    img.logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #E41E26;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #333;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #E41E26;
+      color: #fff !important;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .badge:hover {
+      background-color: #c0181f;
+    }
+    .badge svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+    }
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #777;
+    }
+    a.mail-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: #E41E26;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="logo.png" alt="Prolig Logo" class="logo" />
+    <h1>Prolig — Amatör Lig Takip Sistemi</h1>
+    <p>Fikstür, puan durumu ve maç istatistikleri tek yerde.<br>Mobil uygulamayı indirin veya bize ulaşın.</p>
+    <div class="badges">
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.softcross.prolig" target="_blank" aria-label="Google Play'den indir">
+        <svg viewBox="0 0 24 24"><path d="M3 4.27v15.46c0 .8.86 1.3 1.56.9l11.5-7.1-11.5-7.1A1.04 1.04 0 0 0 3 4.27zm18.38 7.34L17.2 9.08l-1.9 1.9 1.9 1.9 4.18-2.27zm-6.36-3.45-1.7 1.7-6.2-6.2 7.9 4.5zm-1.7 7.53 1.7 1.7-7.9 4.5 6.2-6.2z"/></svg>
+        Google Play
+      </a>
+      <a class="badge" href="https://apps.apple.com/us/app/proligapp/id6753002376" target="_blank" aria-label="App Store'dan indir">
+        <svg viewBox="0 0 24 24"><path d="M18.7 17.7c-.6 1.4-1.2 2.7-2.6 2.7-1.4 0-1.8-.9-3.2-.9-1.4 0-1.9.9-3.2.9s-2.1-1.3-2.7-2.7C2.8 13.6 4.7 9.8 7.2 9.8c1.5 0 2.1.9 3.3.9 1.2 0 1.7-.9 3.3-.9 1 .1 1.9.6 2.5 1.5-2.2 1.2-1.8 4.4.4 5.4zM15.9 6.3c.5-.6.8-1.4.7-2.2-.8.1-1.6.5-2.1 1.1-.5.6-.8 1.4-.8 2.2.8 0 1.6-.4 2.2-1.1z"/></svg>
+        App Store
+      </a>
+    </div>
+    <a href="mailto:prolig.social@gmail.com" class="mail-link">prolig.social@gmail.com</a>
+    <footer>© 2025 Prolig</footer>
+  </div>
+</body>
+</html>
