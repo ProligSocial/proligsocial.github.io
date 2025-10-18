@@ -1,2 +1,86 @@
-<h1>Hesabınız Onaylandı</h1>
-<p>Prolig hesabınız başarıyla doğrulandı. Uygulamayı açarak devam edebilirsiniz.</p>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prolig | Hesabınız Onaylandı</title>
+  <meta name="theme-color" content="#E41E26" />
+  <style>
+    body {
+      margin: 0;
+      background: #f9f9f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 40px 28px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: center;
+      max-width: 420px;
+      width: 90%;
+    }
+    img.logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #E41E26;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #333;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #E41E26;
+      color: #fff !important;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    a.button:hover {
+      background-color: #c0181f;
+    }
+    footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="./logo.png" alt="Prolig Logo" class="logo" />
+    <h1>Hesabınız Onaylandı 🎉</h1>
+    <p>Prolig hesabınız başarıyla doğrulandı.<br>Uygulamayı açarak devam edebilirsiniz.</p>
+    <a href="prolig://auth-callback" class="button">Uygulamayı Aç</a>
+    <footer>© 2025 Prolig</footer>
+  </div>
+
+  <script>
+    // 📱 Mobil kullanıcıysa uygulamayı otomatik açmayı dene
+    const deepLink = "prolig://auth-callback";
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Mobilde 1 saniye sonra uygulamayı açmayı dene
+      setTimeout(() => {
+        window.location.href = deepLink;
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
