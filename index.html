@@ -66,21 +66,8 @@
     <img src="./logo.png" alt="Prolig Logo" class="logo" />
     <h1>Hesabınız Onaylandı 🎉</h1>
     <p>Prolig hesabınız başarıyla doğrulandı.<br>Uygulamayı açarak devam edebilirsiniz.</p>
-    <a href="prolig://auth-callback" class="button">Uygulamayı Aç</a>
     <footer>© 2025 Prolig</footer>
   </div>
 
-  <script>
-    // 📱 Mobil kullanıcıysa uygulamayı otomatik açmayı dene
-    const deepLink = "prolig://auth-callback";
-    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-    if (isMobile) {
-      // Mobilde 1 saniye sonra uygulamayı açmayı dene
-      setTimeout(() => {
-        window.location.href = deepLink;
-      }, 1000);
-    }
-  </script>
 </body>
 </html>
